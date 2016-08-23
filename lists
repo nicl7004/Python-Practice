@@ -1,0 +1,19 @@
+list = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+list.append('h')
+
+print(list)
+
+for i in range (len(list)):
+    print(i, list[i])
+
+def fibSequence(n):
+    a, b = 0, 1
+    c = 0
+    while a < n:
+        print('%d ' % (a))
+        a, b = b, a+b
+
+
+fibSequence(2000)
+
+
