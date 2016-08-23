@@ -1,0 +1,54 @@
+print("this is an example of the print function")
+
+exampleVar = 55
+
+print(exampleVar)
+
+x, y, z = (10, 11, 12)
+
+print(x, y, z)
+
+# while loops
+
+condition = 1
+while condition <= 10:
+    print(condition)
+    condition += 1
+
+#infinite loop
+# while True:
+#     print('swag')
+
+
+x = 5
+y = 8
+
+#if elif else
+
+if(x > y):
+    print ("x greater than y")
+
+elif(y > x):
+    print("y greater than x")
+
+#Functions
+
+def example():
+    print("basic function")
+    x = 9
+    print(x)
+
+example()
+
+#parameters
+
+def simple_addition(num1, num2):
+
+    answer = num1 + num2
+    print('num one is', num1)
+    print('answer is', answer)
+
+simple_addition(5,3)
+name = "Nick"
+age = 12
+print("% is % years old." % (name, age))

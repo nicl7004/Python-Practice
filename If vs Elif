@@ -1,0 +1,48 @@
+score = 80
+
+if score >= 90:
+    print ("A")
+else:
+    if score >= 80:
+        print ("B")
+    else:
+        if score >= 70:
+            print ("C")
+        else:
+            if score >= 60:
+                print("D")
+            else:
+                if score >= 50:
+                    print("F")
+
+
+
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+elif score >= 60:
+    print("D")
+elif score >= 50:
+    print("F")
+
+def determineGrade(score):
+    if score >= 90:
+         grade = 'A'
+    elif score >= 80:
+        grade = 'B'
+    elif score >= 70:
+        grade = 'C'
+    elif score >= 60:
+        grade = 'D'
+    elif score >= 50:
+        grade = 'F'
+    return grade
+
+
+x = determineGrade(score)
+
+print (x)
+
