@@ -1,0 +1,6 @@
+t = 'a', 'b', ('a', 'b')
+#indexing starts at 0
+#tuples are immutable
+print(t)
+print(t[0])
+print(t[2])

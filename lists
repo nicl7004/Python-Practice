@@ -1,6 +1,6 @@
 list = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 list.append('h')
-
+secondList = ['i', 'j', 'k']
 print(list)
 
 for i in range (len(list)):
@@ -17,3 +17,11 @@ def fibSequence(n):
 fibSequence(2000)
 
 
+list.extend(secondList)
+
+print (list)
+
+print(list.pop())
+print(list)
+y = list.reverse()
+print(list)
