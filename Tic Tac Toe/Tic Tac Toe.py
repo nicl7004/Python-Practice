@@ -60,14 +60,24 @@ def diagWin(scoreList):
 
             if diag == len(scoreList):
                 return[1, scoreList[0][0]]
+    y = len(scoreList) - 1
+
+    x = 0
+    while len(scoreList)>x:
+        if scoreList[x][y] == scoreList[x+1][y-1]:
+            diag += 1
+            y -= 1
+            x += 1
+            if diag == len(scoreList):
+                return[1, scoreList[0][len(scoreList)-1]]
     return 0
 
 
 
 
-myList = [[0,1,0],
-          [1,2,0],
-          [0,1,0]]
+myList = [[1,1,2],
+          [1,2,1],
+          [2,1,0]]
 score = threeInRow(myList)
 
 #print("Horiz wins =", score[0])
@@ -82,3 +92,5 @@ if score[1] != 0:
 if score[2] != 0:
     print("Diag win = true")
     print("Diag wins number", score[2][1])
+else:
+    print("No winner")
