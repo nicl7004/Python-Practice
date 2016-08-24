@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98544f21-1919-4330-911b-4fb46755036c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tuples and sequences" afterPath="$PROJECT_DIR$/tuples and sequences" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Algorithms Tut A.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,6 +18,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PythonPractice$math_and_print.coverage" NAME="math and print Coverage Results" MODIFIED="1471921909227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonPractice$Tic_Tac_Toe.coverage" NAME="Tic Tac Toe Coverage Results" MODIFIED="1472013326073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tic Tac Toe" />
     <SUITE FILE_PATH="coverage/Algorithms Tut A$math_and_print.coverage" NAME="math and print Coverage Results" MODIFIED="1471921116207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonPractice$tuples_and_sequences.coverage" NAME="tuples and sequences Coverage Results" MODIFIED="1472005470387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonPractice$If_vs_Elif.coverage" NAME="If vs Elif Coverage Results" MODIFIED="1471922162998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -41,27 +43,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lists" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lists">
+      <file leaf-file-name="Tic Tac Toe.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tuples and sequences" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tuples and sequences">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,6 +72,7 @@
         <option value="$PROJECT_DIR$/If vs Elif" />
         <option value="$PROJECT_DIR$/lists" />
         <option value="$PROJECT_DIR$/tuples and sequences" />
+        <option value="$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe.py" />
       </list>
     </option>
   </component>
@@ -131,6 +131,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tic Tac Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -142,7 +156,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
-  <component name="RunManager" selected="Python.tuples and sequences">
+  <component name="RunManager" selected="Python.Tic Tac Toe">
     <configuration default="false" name="math and print" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -211,6 +225,24 @@
       <module name="Algorithms Tut A" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tuples and sequences" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tic Tac Toe" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tic Tac Toe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Algorithms Tut A" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -423,18 +455,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.math and print" />
       <item index="1" class="java.lang.String" itemvalue="Python.If vs Elif" />
       <item index="2" class="java.lang.String" itemvalue="Python.lists" />
       <item index="3" class="java.lang.String" itemvalue="Python.tuples and sequences" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Tic Tac Toe" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.tuples and sequences" />
-        <item index="1" class="java.lang.String" itemvalue="Python.lists" />
-        <item index="2" class="java.lang.String" itemvalue="Python.If vs Elif" />
-        <item index="3" class="java.lang.String" itemvalue="Python.math and print" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.Tic Tac Toe" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tuples and sequences" />
+        <item index="2" class="java.lang.String" itemvalue="Python.lists" />
+        <item index="3" class="java.lang.String" itemvalue="Python.If vs Elif" />
+        <item index="4" class="java.lang.String" itemvalue="Python.math and print" />
       </list>
     </recent_temporary>
   </component>
@@ -551,8 +585,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tuples and sequences">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
