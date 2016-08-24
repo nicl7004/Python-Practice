@@ -1,6 +1,22 @@
+from collections import deque
+
+queue = deque(['Nick', 'Matt', 'Erik'])
+
+print(queue)
+
+queue.popleft()
+
+print("queue pop left", queue)
+queue.append("Swag")
+
+print("queue after append and left pop", queue)
+
+
+print("\n\n\n\n")
 t = 'a', 'b', ('a', 'b')
 #indexing starts at 0
 #tuples are immutable
 print(t)
 print(t[0])
 print(t[2])
+
