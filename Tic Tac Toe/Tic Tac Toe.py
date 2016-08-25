@@ -2,6 +2,8 @@
 
 numberSpaces = int(input("Enter your number of spaces."))
 
+
+
 x = 0
 
 def sideSpace():
@@ -10,14 +12,17 @@ def sideSpace():
 def verticalBar():
     print("|   " * (numberSpaces + 1))
 
-
-
 while x < numberSpaces:
     sideSpace()
     verticalBar()
     x += 1
 sideSpace()
 
+def sanitize(input):
+    input = input.replace(' ', '')
+    input = input.replace(',', '')
+    input = list(input)
+    return input
 
 def threeInRow(scoreList):
     x=0
@@ -72,25 +77,47 @@ def diagWin(scoreList):
                 return[1, scoreList[0][len(scoreList)-1]]
     return 0
 
-
-
-
 myList = [[1,1,2],
           [1,2,1],
           [2,1,0]]
 score = threeInRow(myList)
 
-#print("Horiz wins =", score[0])
-if score[0] != 0:
-    print("Horiz win = true")
-    print("Horiz win number", score[0][1])
-#print("Vert wins =", score[1])
-if score[1] != 0:
-    print("Vert win = true")
-    print("Vert wins number", score[1][1])
-#print("Diag wins =", score[2])
-if score[2] != 0:
-    print("Diag win = true")
-    print("Diag wins number", score[2][1])
-else:
-    print("No winner")
+# #print("Horiz wins =", score[0])
+# if score[0] != 0:
+#     print("Horiz win = true")
+#     print("Horiz win number", score[0][1])
+# #print("Vert wins =", score[1])
+# if score[1] != 0:
+#     print("Vert win = true")
+#     print("Vert wins number", score[1][1])
+# #print("Diag wins =", score[2])
+# if score[2] != 0:
+#     print("Diag win = true")
+#     print("Diag wins number", score[2][1])
+# else:
+#     print("No winner")
+winner = 0
+print (myList)
+myList = [9] * numberSpaces
+myList = [myList for x in range(numberSpaces)]
+# myList = [9]*numberSpaces
+# myList = [myList]* numberSpaces
+print (myList)
+while winner == 0:
+    playerOne = input("Please select the coordinates where you want to put your piece player 1")
+    playerTwo = input("Please select the coordinates where you want to put your piece player 2")
+    # sanatize
+    playerOne = sanitize(playerOne)
+    playerTwo = sanitize(playerTwo)
+    playerOneX = int(playerOne[0])-1
+    playerOneY = int(playerOne[1])-1
+    playerTwoX = int(playerTwo[0])-1
+    playerTwoY = int(playerTwo[1])-1
+    print (playerOneX)
+    print (playerOneY)
+    myList[playerOneX][playerOneY] = 1
+
+    print(myList)
+    break
+
+#print ("Player One", playerOne, "Player Two", playerTwo)
