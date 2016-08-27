@@ -115,7 +115,7 @@ while winner == 0:
     playerTwoY = int(playerTwo[1])-1
     print (playerOneX)
     print (playerOneY)
-    myList[playerOneX][playerOneY] = 1
+    myList[playerOneX][playerOneY][playerOneY]= 1
 
     print(myList)
     break
