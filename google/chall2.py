@@ -2,30 +2,21 @@
 
 
 def salute(string):
-    string = string.replace(" ", "")
-    for each in string:
-        if each != "<" and each != "-" and each != ">":
-            print("Error with input")
-            return 0
+
     count = i = 0
     string = list(string)
     while len(string) > 0:
-        if string[i] == ">":
+        if string[if] != "<" and each != "-" and each != ">":
+            return 0
+        elif string[i] == ">":
             for b in string:
                 if b == "<":
                     count +=2
         del string[i]
-
-
-
-
-
-
-
     return count
 
 
-
+l
 
 
 
