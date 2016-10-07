@@ -6,7 +6,7 @@ def salute(string):
     count = i = 0
     string = list(string)
     while len(string) > 0:
-        if string[if] != "<" and each != "-" and each != ">":
+        if string[i] != "<" and string[i] != "-" and string[i] != ">":
             return 0
         elif string[i] == ">":
             for b in string:
@@ -16,7 +16,7 @@ def salute(string):
     return count
 
 
-l
+
 
 
 
