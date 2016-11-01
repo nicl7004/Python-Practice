@@ -1,0 +1,26 @@
+class Solution(object):
+    def isSubsequence(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        #s = sub
+        #t = string
+        
+        occurPos =-1
+        doesOccur = 0
+        
+        for eachInt, each in enumerate(s):
+            for nextInt, next in enumerate(t):
+                
+                if each == next and nextInt>occurPos:
+                    occurPos = nextInt
+                    print(occurPos)
+                    doesOccur = 1
+                    break
+            if doesOccur == 0 :
+                return False
+            else: 
+                doesOccur = 0
+        return True
