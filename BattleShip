@@ -1,0 +1,26 @@
+class Solution(object):
+    def countBattleships(self, board):
+        """
+        :type board: List[List[str]]
+        :rtype: int
+        """
+        shipCount = 0
+        for intEach, each in enumerate(board):
+            for intCol, col in enumerate(each):
+                if col =="X": #check to see if we have a hit
+                    if each[intCol -1]:
+                        shipCount +=1
+                    elif each[intCol+1]:
+                        shipCount +=1
+                    elif board[intEach -1][intCol]:
+                        shipCount +=1
+                    elif board[intEach +1][intCol]:
+                        shipCount+=1
+                    else:
+                        shipCount+=1
+                        
+                    # elif each[intCol+1]:
+                        
+                    
+            
+            return shipCount
