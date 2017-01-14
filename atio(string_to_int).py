@@ -3,11 +3,12 @@ class Solution(object):
         """:type str: str
         :rtype: int
         """
-        buffer = " "
+        buffer=" "
         isNeg = False
         isPos = False
         
-        for char, numb in enumerate(str):
+        
+        for numb, char in enumerate(str):
             if char == 0:
                 continue
             elif char == "-":
@@ -25,8 +26,6 @@ class Solution(object):
                 continue
             
             except ValueError:
-                print(char)
-                print("Error")
                 break
        
         try:
