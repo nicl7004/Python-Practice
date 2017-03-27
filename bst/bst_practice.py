@@ -23,12 +23,27 @@ class Operations:
         else:
             return min(self.minDepth(node.left), self.minDepth(node.right))+1
 
-    def inOrderTraversal(self, node):
+    def inOrderTraversal(self, node,array):
         if node is not None:
             #left subtree first, then the node data, then right subtree
-            self.inOrderTraversal(node.left)
-            print(node.data)
-            self.inOrderTraversal(node.right)
+            self.inOrderTraversal(node.left,array)
+            array.append(node.data)
+            self.inOrderTraversal(node.right,array)
+        return array
+
+    def preOrderTraversal(self,node,array):
+        if node is not None:
+            array.append(node.data)
+            self.preOrderTraversal(node.left,array)
+            self.preOrderTraversal(node.right,array)
+        return array
+
+    def postOrderTraversal(self,node,array):
+        if node is not None:
+            self.postOrderTraversal(node.left,array)
+            self.postOrderTraversal(node.right,array)
+            array.append(node.data)
+        return array
 
 def main():
     root = Node(1)
@@ -38,7 +53,9 @@ def main():
     root.left.right = Node(5)
     operation = Operations()
     print("Tree depth is: %d" % operation.minDepth(root))
-    operation.inOrderTraversal(root)
+    print("Inorder traversal:", operation.inOrderTraversal(root,[]))
+    print("Preorder traversal:", operation.preOrderTraversal(root,[]))
+    print("Postorder traversal:", operation.postOrderTraversal(root,[]))
 
 if __name__ == '__main__':
     main()
