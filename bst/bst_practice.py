@@ -19,7 +19,6 @@ class Operations:
             return self.minDepth(node.left)+1
         elif node.right == None:
             return self.minDepth(node.right)+1
-
         else:
             return min(self.minDepth(node.left), self.minDepth(node.right))+1
 
@@ -54,6 +53,18 @@ class Operations:
             return(self.maxPathSum(node.left) + node.data)
         else:
             return(max((self.maxPathSum(node.left)+node.data), (self.maxPathSum(node.right)+node.data)))
+class Sorts:
+    # def __init__:
+    def bubbleSort(self,array):
+        for firstInd in range(len(array)):
+            for secondInd in range(0,len(array)-firstInd-1):
+                if array[secondInd] > array[secondInd+1]:
+                    array[secondInd], array[secondInd+1] = array[secondInd+1], array[secondInd]
+        return array
+    def quickSort(self,array):
+        pass
+    def mergeSort(self,array):
+        pass
 
 
 def main():
@@ -66,11 +77,14 @@ def main():
     root.right.right.left   = Node(3);
     root.right.right.right  = Node(4);
     operation = Operations()
+    sorts = Sorts()
+    array = [12,10,5,13,77,100,2]
     print("Tree depth is: %d" % operation.minDepth(root))
     print("Inorder traversal:", operation.inOrderTraversal(root,[]))
     print("Preorder traversal:", operation.preOrderTraversal(root,[]))
     print("Postorder traversal:", operation.postOrderTraversal(root,[]))
     print("Max path sum:", operation.maxPathSum(root))
+    print("Bubblesort:", sorts.bubbleSort(array))
 
 if __name__ == '__main__':
     main()
