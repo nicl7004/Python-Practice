@@ -45,17 +45,32 @@ class Operations:
             array.append(node.data)
         return array
 
+    def maxPathSum(self,node):
+        if node.left is None and node.right is None:
+            return node.data
+        elif node.left is None:
+            return (self.maxPathSum(node.right) + node.data)
+        elif node.right is None:
+            return(self.maxPathSum(node.left) + node.data)
+        else:
+            return(max((self.maxPathSum(node.left)+node.data), (self.maxPathSum(node.right)+node.data)))
+
+
 def main():
-    root = Node(1)
+    root = Node(10)
     root.left = Node(2)
-    root.right = Node(3)
-    root.left.left = Node(4)
-    root.left.right = Node(5)
+    root.right   = Node(10);
+    root.left.left  = Node(20);
+    root.left.right = Node(1);
+    root.right.right = Node(-25);
+    root.right.right.left   = Node(3);
+    root.right.right.right  = Node(4);
     operation = Operations()
     print("Tree depth is: %d" % operation.minDepth(root))
     print("Inorder traversal:", operation.inOrderTraversal(root,[]))
     print("Preorder traversal:", operation.preOrderTraversal(root,[]))
     print("Postorder traversal:", operation.postOrderTraversal(root,[]))
+    print("Max path sum:", operation.maxPathSum(root))
 
 if __name__ == '__main__':
     main()
