@@ -20,7 +20,6 @@ class linkedListOperation:
     def delete(self, prev, head, key, value):
         if head != None:
             if head.value == (key,value) and prev == None:
-                # print("Deleting head of ll", head.value, prev, head.next)
                 self.delete(None, head.next, key, value)
             elif head.value == (key,value):
                 prev.next = head.next
