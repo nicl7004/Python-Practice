@@ -27,6 +27,15 @@ class linkedListOperation:
                 prev = head
                 self.delete(prev, head.next, key, value)
 
+    def removeDuplicates(self,prev,head, array = []):
+        if head != None:
+            if head.value in array:
+                self.delete(prev, head, head.value[0], head.value[1])
+                self.removeDuplicates(prev,head.next,array)
+            else:
+                array.append(head.value)
+                self.removeDuplicates(head,head.next,array)
+
 class hashtable:
     def __init__(self,size):
         self.array = [None] * size
@@ -60,11 +69,18 @@ def main():
     print("\n\n---------------INSERT----------------")
     operation.insertEnd(head,1100,69)
     operation.printList(head)
-    print("\n\n---------------DELETE 23,10 && 24,11----------------")
-    operation.delete(None,head,23,10)
+    print("\n\n---------------DELETE 24,11----------------")
     operation.delete(None,head,24,11)
     operation.printList(head)
-
+    print("\n\n---------------INSERT DUPLICATES----------------")
+    operation.insertEnd(head,1100,69)
+    operation.insertEnd(head,1100,69)
+    operation.insertEnd(head,1100,69)
+    operation.insertEnd(head,1,62)
+    operation.printList(head)
+    print("\n\n---------------DELETE DUPLICATES----------------")
+    operation.removeDuplicates(None, head, array = [])
+    operation.printList(head)
     print("\n\n\n---------------HASHTABLE----------------")
     #table
     table = hashtable(100)
